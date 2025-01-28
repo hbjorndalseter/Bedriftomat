@@ -1,0 +1,104 @@
+{
+    "company": [
+        {
+            "id": 1,
+            "name": "bredvid",
+            "logo": "/src/assets/images/bredvid.png"
+        },
+        {
+            "id": 2,
+            "name": "Statens Vegvesen",
+            "logo": "/src/assets/images/Statens_vegvesen.png"
+        },
+        {
+            "id": 3,
+            "name": "Kahoot!",
+            "logo": "/src/assets/images/Kahoot!.png"
+        },
+        {
+            "id": 4,
+            "name": "Trimble",
+            "logo": "/src/assets/images/Trimble.png"
+        },
+        {
+            "id": 5,
+            "name": "Storebrand",
+            "logo": "/src/assets/images/Storebrand.png"
+        },
+        {
+            "id": 6,
+            "name": "Storvik",
+            "logo": "/src/assets/images/Storvik.png"
+        },
+        {
+            "id": 7,
+            "name": "PwC",
+            "logo": "/src/assets/images/PwC.png"
+        },
+        {
+            "id": 8,
+            "name": "Elkem",
+            "logo": "/src/assets/images/Elkem.png"
+        },
+        {
+            "id": 9,
+            "name": "Posten og Bring",
+            "logo": "/src/assets/images/Posten_Bring.png"
+        },
+        {
+            "id": 10,
+            "name": "Geomatikk",
+            "logo": "/src/assets/images/Geomatikk.png"
+        },
+        {
+            "id": 11,
+            "name": "Skatteetaten",
+            "logo": "/src/assets/images/Skatteetaten.png"
+        },
+        {
+            "id": 12,
+            "name": "Forsvarsbygg",
+            "logo": "/src/assets/images/Forsvarsbygg.png"
+        },
+        {
+            "id": 13,
+            "name": "bouvet",
+            "logo": "/src/assets/images/bouvet.png"
+        },
+        {
+            "id": 14,
+            "name": "Geodata",
+            "logo": "/src/assets/images/Geodata.png"
+        },
+        {
+            "id": 15,
+            "name": "",
+            "logo": "/src/assets/images/.png"
+        },
+        {
+            "id": 16,
+            "name": "",
+            "logo": "/src/assets/images/.png"
+        },
+        {
+            "id": 17,
+            "name": "",
+            "logo": "/src/assets/images/.png"
+        },
+        {
+            "id": 18,
+            "name": "",
+            "logo": "/src/assets/images/.png"
+        },
+        {
+            "id": 19,
+            "name": "",
+            "logo": "/src/assets/images/.png"
+        },
+        {
+            "id": 20,
+            "name": "",
+            "logo": "/src/assets/images/.png"
+        }
+    ]
+}
