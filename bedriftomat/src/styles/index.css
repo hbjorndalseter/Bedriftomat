@@ -28,7 +28,7 @@
   /* ... */
 }
 
-.question-box {
+#question-box {
   background-color: var(--color-avocado-100);
   border-radius: 1rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
