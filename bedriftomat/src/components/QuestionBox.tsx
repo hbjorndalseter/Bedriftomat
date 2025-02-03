@@ -5,7 +5,7 @@ interface QuestionProps {
 
 const Question: React.FC<QuestionProps> = ({ question }) => {
   return (
-    <div className='question-box'>
+    <div id='question-box'>
       <h2>{question}</h2>
     </div>
   )
