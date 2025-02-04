@@ -8,3 +8,5 @@ createRoot(document.getElementById('root')!).render(
       <App />
   </StrictMode>,
 )
+
+// Denne rører vi vel ikke i det hele tatt?
