@@ -14,7 +14,7 @@ import ResultPage from './pages/ResultPage.tsx';
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="w-screen h-screen relative overflow-hidden bg-gradient-to-b from-[#2c3a86] via-[#c5793a] to-[#ec8927]">
+      <div className="App flex flex-col items-center h-screen overflow-hidden bg-gradient-to-bl from-[#1b255d] to-[#ec8927]">
         <Header />
         <Routes>
           <Route path="/" element={<StartPage />} />
