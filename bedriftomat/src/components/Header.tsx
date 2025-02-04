@@ -3,9 +3,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
     return (
-        <header className="header">
-            <img src="/src/assets/images/IVDagene.png" alt="IVDagene" className="header-logo" />
-        </header>
+        <img src="/src/assets/images/IVDagene.png" alt="IVDagene" className='h-16' />
     );
 };
 
