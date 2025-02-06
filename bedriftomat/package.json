@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "server": "tsx src/backend/api/index.ts",
+    "server": "tsx src/api/index.ts",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "bedriftomat": "file:",
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
