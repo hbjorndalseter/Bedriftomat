@@ -15,3 +15,7 @@ export interface Company {
     name: string;
     logo: string;
 }
+
+export interface QuestionProps {
+    text: string;
+}
