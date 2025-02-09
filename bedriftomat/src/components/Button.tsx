@@ -1,15 +1,29 @@
 interface ButtonProps {
-    navn: string;
-}
-
-export default function Button({ navn }: ButtonProps) {
-
+    text: string;
+    onClick: () => void;
+    isSelected?: boolean;
+    isPrimary?: boolean;
+  }
+  
+  const Button: React.FC<ButtonProps> = ({ text, onClick, isSelected = false, isPrimary = false }) => {
     return (
-        <div className="w-[335px] h-[72px] bg-[#2d3b87] rounded-[36px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
-            <div className="w-[164px] h-[71px] text-center text-white text-2xl font-normal font-['Istok Web']">
-                <h2>{navn}</h2>
-            </div>
-        </div>
+      <button
+        onClick={onClick}
+        style={{
+          display: "block",
+          margin: "10px 0",
+          padding: "10px",
+          backgroundColor: isPrimary ? "#28a745" : isSelected ? "#ffcc00" : "#007bff",
+          color: "white",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          fontSize: "18px",
+        }}
+      >
+        {text}
+      </button>
     );
-}
-
+  };
+  
+  export default Button;

@@ -1,14 +1,13 @@
-import React from 'react'
-interface QuestionProps {
-  question: string;
-}
+import { QuestionProps } from '../types';
 
-const Question: React.FC<QuestionProps> = ({ question }) => {
+
+
+const QuestionBox: React.FC<QuestionProps> = ({ text })=> {
   return (
-    <div id='question-box'>
-      <h2>{question}</h2>
-    </div>
-  )
+    <p style={{ color: 'white', fontFamily: 'Arial, sans-serif', fontSize: '24px' }}>
+      {text}
+    </p>
+  );
 }
 
-export default Question;
+export default QuestionBox;

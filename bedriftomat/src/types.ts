@@ -15,3 +15,21 @@ export interface Company {
     name: string;
     logo: string;
 }
+
+export interface QuestionProps {
+    text: string;
+}
+
+export interface NextButtonProps {
+    onClick: () => void;
+    disabled: boolean;
+  }
+  
+  export interface QuizData {
+    questions: Question[];
+  }
+
+  export interface SelectedAnswer {
+    answerId: number;
+    rewardedCompanies: number[];
+  }
