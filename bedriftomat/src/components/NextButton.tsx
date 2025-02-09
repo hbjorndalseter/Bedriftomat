@@ -1,7 +1,7 @@
 import { NextButtonProps } from "../types";
 
   
-  const NextButton: React.FC<NextButtonProps> = ({ onClick, disabled }) => {
+  const NextButton: React.FC<NextButtonProps> = ({ onClick, disabled, lastQuestion }) => {
     return (
       <button
         onClick={onClick}
@@ -17,7 +17,7 @@ import { NextButtonProps } from "../types";
           fontSize: "18px",
         }}
       >
-        Next
+        {lastQuestion ? "Finish" : "Next"}
       </button>
     );
   };

@@ -8,7 +8,7 @@
         {
             "id": 2,
             "name": "Statens Vegvesen",
-            "logo": "/src/assets/images/Statens_vegvesen.png"
+            "logo": "/src/assets/images/Statens_vegvesen.webp"
         },
         {
             "id": 3,
@@ -18,7 +18,7 @@
         {
             "id": 4,
             "name": "Trimble",
-            "logo": "/src/assets/images/Trimble.png"
+            "logo": "/src/assets/images/Trimble.jpg"
         },
         {
             "id": 5,

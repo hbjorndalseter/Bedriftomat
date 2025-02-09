@@ -1,35 +1,39 @@
 export interface Answer {
-    id: number;
-    text: string;
-    rewarded_companies: number[];
+  id: number;
+  text: string;
+  rewarded_companies: number[];
 }
 
 export interface Question {
-    id: number;
-    question: string;
-    answers: Answer[];
+  id: number;
+  question: string;
+  answers: Answer[];
 }
 
 export interface Company {
-    id: number;
-    name: string;
-    logo: string;
+  id: number;
+  name: string;
+  logo: string;
 }
 
 export interface QuestionProps {
-    text: string;
+  text: string;
 }
 
 export interface NextButtonProps {
-    onClick: () => void;
-    disabled: boolean;
-  }
-  
-  export interface QuizData {
-    questions: Question[];
-  }
+  onClick: () => void;
+  disabled: boolean;
+  lastQuestion: boolean;
+}
 
-  export interface SelectedAnswer {
-    answerId: number;
-    rewardedCompanies: number[];
-  }
+export interface AnswerButtonProps {
+  text: string;
+  onClick: () => void;
+  isSelected?: boolean;
+  isPrimary?: boolean;
+}
+
+export interface SelectedAnswer {
+  answerId: number;
+  rewardedCompanies: number[];
+}
