@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { QuizData, SelectedAnswer } from "../types";
 import QuestionBox from "../components/QuestionBox";
 import Button from "../components/Button";
-import NextButton from "../components/NextButton";
 
 const QuestionPage: React.FC = () => {
   const [quizData, setQuizData] = useState<QuizData | null>(null);
