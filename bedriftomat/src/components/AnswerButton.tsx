@@ -3,22 +3,11 @@ import { AnswerButtonProps } from "../types";
 
 const AnswerButton: React.FC<AnswerButtonProps> = ({ text, onClick, isSelected = false, isPrimary = false }) => {
   return (
-    <button
-      onClick={onClick}
-      style={{
-        display: "block",
-        margin: "10px 0",
-        padding: "10px",
-        backgroundColor: isPrimary ? "#28a745" : isSelected ? "#ffcc00" : "#007bff",
-        color: "white",
-        border: "none",
-        borderRadius: "5px",
-        cursor: "pointer",
-        fontSize: "18px",
-      }}
-    >
-      {text}
-    </button>
+    <div className="answer-button-container">
+      <button className="answer-button" onClick={onClick}>
+        {text}
+      </button>
+    </div>
   );
 };
 

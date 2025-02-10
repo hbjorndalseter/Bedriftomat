@@ -86,7 +86,7 @@ const QuestionPage: React.FC = () => {
           onClick={() => handleAnswerSelect(answer.id, answer.rewarded_companies)}
           isSelected={selectedAnswer?.answerId === answer.id}
         />
-      ))}
+      ))};
 
       <NextButton onClick={handleNext} disabled={selectedAnswer === null} lastQuestion={currentQuestionIndex == (quizData.length - 1)} />
     </div>

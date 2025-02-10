@@ -1,11 +1,15 @@
-import { Link} from "react-router-dom";
-//import QuestionPage from './pages/QuestionPage.tsx';
+import { Link } from "react-router-dom";
 
-export default function StartButton() {
+interface StartButtonProps {
+    title: string;
+}
+
+export default function StartButton({ title }: StartButtonProps) {
     return (
-        <button className="w-[168px] h-[71px] text-center text-white text-2xl font-normal font-['Istok Web']"><Link to="/question">
-            START
-        </Link>
+        <button className="start-button">
+            <Link to="/question">
+                {title}
+            </Link>
         </button>
     );
 }
