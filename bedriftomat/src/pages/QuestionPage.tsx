@@ -4,6 +4,7 @@ import { Question, SelectedAnswer } from "../types";
 import QuestionBox from "../components/QuestionBox";
 import AnswerButton from "../components/AnswerButton";
 import NextButton from "../components/NextButton";
+import ProgressBar from "../components/ProgressBar";
 
 const QuestionPage: React.FC = () => {
 
@@ -66,27 +67,29 @@ const QuestionPage: React.FC = () => {
   };
 
   const finishQuiz = () => {
-    navigate("/result", { state: {scores}});
+    navigate("/result", { state: { scores } });
   };
 
   if (!quizData || quizData.length === 0) {
-    return <p>Loading...</p>; //Ensures no rendering before data is ready
+    return <p>Laster...</p>; //Ensures no rendering before data is ready
   }
 
   const currentQuestion = quizData[currentQuestionIndex];
 
   return (
-    <div>
+    <div className="flex flex-col items-center h-85/100 justify-around max-[375px]:">
+      <ProgressBar progress={(currentQuestionIndex/quizData.length)} />
       <QuestionBox text={currentQuestion.question} />
-
-      {currentQuestion.answers.map((answer) => (
-        <AnswerButton
-          key={answer.id}
-          text={answer.text}
-          onClick={() => handleAnswerSelect(answer.id, answer.rewarded_companies)}
-          isSelected={selectedAnswer?.answerId === answer.id}
-        />
-      ))};
+      <div className="flex flex-col h-2/3 justify-between">
+        {currentQuestion.answers.map((answer) => (
+          <AnswerButton
+            key={answer.id}
+            text={answer.text}
+            onClick={() => handleAnswerSelect(answer.id, answer.rewarded_companies)}
+            isSelected={selectedAnswer?.answerId === answer.id}
+          />
+        ))}
+      </div>
 
       <NextButton onClick={handleNext} disabled={selectedAnswer === null} lastQuestion={currentQuestionIndex == (quizData.length - 1)} />
     </div>
