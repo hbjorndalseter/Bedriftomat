@@ -2,7 +2,7 @@ import { QuestionProps } from '../types';
 
 const QuestionBox: React.FC<QuestionProps> = ({ text })=> {
   return (
-    <p className="question-box-text">
+    <p className="mb-4 text-lg font-bold text-center text-white">
       {text}
     </p>
   );
