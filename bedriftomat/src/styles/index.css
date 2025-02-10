@@ -67,9 +67,9 @@
   width: 85%;
   height: 80%;
   flex-direction: column;
-  //justify-content: space-between;
+  /* //justify-content: space-between; */
   align-items: center;
-  //flex-shrink: 0;
+  /* //flex-shrink: 0; */
   max-width: 650px;
 }
 
@@ -120,7 +120,7 @@
   text-decoration: none;
   max-width: 300px;
 }
-
+/* 
 .question-box-text {
   color: white;
   font-size: 1.5rem;
@@ -157,4 +157,4 @@
 .next-button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
-}
+} */
