@@ -64,31 +64,53 @@
 
 .start-page {
   display: flex;
+  width: 85%;
+  height: 80%;
   flex-direction: column;
-  justify-content: center;
-  max-width: 32rem;
-  margin: 0 auto;
+  //justify-content: space-between;
+  align-items: center;
+  //flex-shrink: 0;
+  max-width: 650px;
 }
 
 .start-page-heading {
+  display: flex;
+  width: 80%;
+  height: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #FFF;
+  margin-top: 15%;
+
   text-align: center;
-  color: white;
-  font-size: 3rem; /* approximates text-5xl */
-  font-family: 'Istok Web', sans-serif;
+  font-family: "Istok Web", sans-serif;
+  font-size: 270%;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .start-page-text {
+  color: #FFF;
   text-align: center;
-  color: white;
-  font-size: 1.5rem; /* approximates text-2xl */
-  font-family: 'Istok Web', sans-serif;
+  font-family: "Istok Web", sans-serif;
+  font-size: 150%;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 150%;
+  letter-spacing: normal;
+  margin-top: 15%;
+  max-width: 550px;
 }
 
 .start-button {
-  width: 335px;
-  height: 72px;
+  margin-top: auto;
+  width: 85%;
+  height: 8%;
   background-color: #2d3b87;
-  border-radius: 36px;
+  border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
   color: white;
   font-size: 2rem;
@@ -96,4 +118,43 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  max-width: 300px;
+}
+
+.question-box-text {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Istok Web', sans-serif;
+}
+
+.answer-button-container {
+  position: absolute;
+  left: 25px;
+  top: 98px;
+}
+
+.answer-button {
+  width: 335px;
+  height: 81px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  border: none;
+  cursor: pointer;
+}
+
+.next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.next-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
