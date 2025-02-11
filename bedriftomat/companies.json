@@ -77,28 +77,28 @@
         },
         {
             "id": 16,
-            "name": "",
-            "logo": "/src/assets/images/.png"
+            "name": "Sopra Steria",
+            "logo": "/src/assets/images/Sopra_Steria.png"
         },
         {
             "id": 17,
-            "name": "",
-            "logo": "/src/assets/images/.png"
+            "name": "Innowin",
+            "logo": "/src/assets/images/Innowin.png"
         },
         {
             "id": 18,
-            "name": "",
-            "logo": "/src/assets/images/.png"
+            "name": "Norconsult Digital",
+            "logo": "/src/assets/images/Norconsult_Digital.png"
         },
         {
             "id": 19,
-            "name": "",
-            "logo": "/src/assets/images/.png"
+            "name": "Kartverket",
+            "logo": "/src/assets/images/Kartverket.png"
         },
         {
             "id": 20,
-            "name": "",
-            "logo": "/src/assets/images/.png"
+            "name": "NBIM",
+            "logo": "/src/assets/images/NBIM.png"
         }
     ]
 }
