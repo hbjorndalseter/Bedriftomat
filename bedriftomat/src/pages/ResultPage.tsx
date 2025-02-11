@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Company } from "../types";
+import { Link } from "react-router-dom";
 
 export default function ResultPage() {
     const location = useLocation();
@@ -26,9 +27,9 @@ export default function ResultPage() {
     }, [scores]);
 
     return (
-        <div className="flex flex-col items-center w-[85%] h-[80%] text-white justify-between">
+        <div className="flex flex-col items-center w-[85%] h-[80%] text-white justify-around">
             {/* Økt mellomrom her */}
-            <h2 className="text-2xl font-bold text-center">Gratulerer! Du matcher med følgende bedrifter:</h2>
+            <h2 className="text-2xl font-bold text-center ">Gratulerer! Du matcher med følgende bedrifter:</h2>
             
             <div className="flex items-end justify-center gap-x-8">
                 {resultingCompanies.length >= 3 && (
@@ -63,6 +64,14 @@ export default function ResultPage() {
             <p className="text-sm text-center mb-[100%]">
                 Sjekk standkartet for hvor du finner bedriftene og si *kodeord* for *premie*.
             </p>
+            <div className="flex justify-between gap-x-[5%]">
+                <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg" >
+                    <Link to="/">Prøv igjen</Link>
+                </button>
+                <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg">
+                    <Link to="https://www.ivdagene.no/standkart">Se standkart</Link>
+                </button>
+            </div>
         </div>
     );
 }
