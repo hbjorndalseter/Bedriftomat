@@ -5,7 +5,7 @@ const NextButton: React.FC<NextButtonProps> = ({ onClick, disabled, lastQuestion
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`w-[335px] h-[72px] rounded-[36px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] text-white transition-colors duration-300 ${
+      className={`w-[335px] h-[72px] rounded-[36px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] text-white transition-colors duration-300 cursor-pointer ${
       disabled ? "bg-[#d9d9d9]" : "bg-[#2d3b87]"
       }`}
     >
