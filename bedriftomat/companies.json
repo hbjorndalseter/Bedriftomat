@@ -99,6 +99,11 @@
             "id": 20,
             "name": "NBIM",
             "logo": "/src/assets/images/NBIM.png"
+        },
+        {
+            "id": 21,
+            "name": "Widerøe",
+            "logo": "/src/assets/images/Wideroe.png"
         }
     ]
 }
