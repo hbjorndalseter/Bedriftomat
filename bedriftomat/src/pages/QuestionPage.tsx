@@ -77,7 +77,7 @@ const QuestionPage: React.FC = () => {
   const currentQuestion = quizData[currentQuestionIndex];
 
   return (
-    <div className="flex flex-col items-center h-85/100 justify-around max-[375px]:">
+    <div className="flex flex-col items-center h-80/100 justify-around max-[375px]:">
       <ProgressBar progress={(currentQuestionIndex/quizData.length)} />
       <QuestionBox text={currentQuestion.question} />
       <div className="flex flex-col h-2/3 justify-between">
