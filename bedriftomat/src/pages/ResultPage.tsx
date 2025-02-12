@@ -37,7 +37,7 @@ export default function ResultPage() {
                         {/* 1. plass */}
                         <div className="flex flex-col items-center md:order-2">
                             <Link to={resultingCompanies[0].url} target="_blank" rel="noopener noreferrer">
-                                <div className="bg-white text-black text-center p-2 rounded-lg w-40 h-30 flex items-center justify-center shadow-xl" style={{ boxShadow: "0 0 10px 3px gold" }}>
+                                <div className="bg-white text-black text-center p-2 rounded-lg w-40 h-30 flex items-center justify-center shadow-xl">
                                     <img src={resultingCompanies[0].logo} alt={resultingCompanies[0].name} className="h-1/1 object-contain max-w-90/100" />
                                 </div>
                             </Link>
@@ -46,7 +46,7 @@ export default function ResultPage() {
                         {/* 2. plass */}
                         <div className="flex flex-col items-center md:order-1">
                             <Link to={resultingCompanies[1].url} target="_blank" rel="noopener noreferrer">
-                                <div className="bg-white text-black text-center p-2 rounded-lg w-32 h-24 flex items-center justify-center shadow-lg" style={{ boxShadow: "0 0 10px 3px silver" }}>
+                                <div className="bg-white text-black text-center p-2 rounded-lg w-32 h-24 flex items-center justify-center shadow-lg">
                                     <img src={resultingCompanies[1].logo} alt={resultingCompanies[1].name} className="h-1/1 object-contain max-w-90/100" />
                                 </div>
                             </Link>
@@ -55,7 +55,7 @@ export default function ResultPage() {
                         {/* 3. plass */}
                         <div className="flex flex-col items-center md:order-3">
                             <Link to={resultingCompanies[2].url} target="_blank" rel="noopener noreferrer">
-                                <div className="bg-white text-black text-center p-2 rounded-lg md:w-32 md:h-24 w-28 h-22 flex items-center justify-center shadow-lg" style={{ boxShadow: "0 0 10px 3px #cd7f32" }}>
+                                <div className="bg-white text-black text-center p-2 rounded-lg md:w-32 md:h-24 w-28 h-22 flex items-center justify-center shadow-lg">
                                     <img src={resultingCompanies[2].logo} alt={resultingCompanies[2].name} className="h-1/1 object-contain max-w-90/100" />
                                 </div>
                             </Link>
