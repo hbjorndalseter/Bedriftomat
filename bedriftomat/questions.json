@@ -2,224 +2,343 @@
     "questions": [
         {
             "id": 1,
-            "question": "Hva pleier du vanligvis å gjøre på en søndag?",
+            "question": "Hva foretrekker du?",
             "answers": [
                 {
                     "id": 1,
-                    "text": "Slapper av med en god bok eller film",
+                    "text": "Trene",
                     "rewarded_companies": [
-                        1,
-                        2,
-                        3,
-                        4
+                        15
                     ]
                 },
                 {
                     "id": 2,
-                    "text": "Går en tur i skogen eller ved sjøen",
+                    "text": "Reise",
                     "rewarded_companies": [
-                        5,
-                        6,
-                        7,
-                        8
+                        14
                     ]
                 },
                 {
                     "id": 3,
-                    "text": "Trener på treningssenter eller hjemme",
+                    "text": "Rolig kveld med venner",
                     "rewarded_companies": [
-                        9,
-                        10,
-                        11,
-                        12
+                        20
                     ]
                 },
                 {
                     "id": 4,
-                    "text": "Jobber litt eller planlegger uken",
+                    "text": "Være på festival",
                     "rewarded_companies": [
-                        13,
-                        14,
-                        15,
-                        16
-                    ]
-                },
-                {
-                    "id": 5,
-                    "text": "Møter venner eller familie for en hyggelig dag",
-                    "rewarded_companies": [
-                        17,
-                        18,
-                        19,
-                        20
+                        6
                     ]
                 }
             ]
         },
         {
             "id": 2,
-            "question": "Hvordan føler du deg vanligvis på mandager?",
+            "question": "Hvilket arbeidsmiljø trives du best i?",
             "answers": [
                 {
-                    "id": 6,
-                    "text": "Motivert og klar for en ny uke",
+                    "id": 5,
+                    "text": "Sal",
                     "rewarded_companies": [
-                        1,
-                        3,
-                        5,
-                        7
+                        9
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Vrimleområdet",
+                    "rewarded_companies": [
+                        12
                     ]
                 },
                 {
                     "id": 7,
-                    "text": "Trøtt og ønsker at helgen varte lenger",
+                    "text": "Fornøyd så lenge det er et grupperom",
                     "rewarded_companies": [
-                        2,
-                        4,
-                        6,
-                        8
-                    ]
-                },
-                {
-                    "id": 8,
-                    "text": "Ganske nøytral, det er bare en dag som alle andre",
-                    "rewarded_companies": [
-                        9,
-                        11,
-                        13,
-                        15
-                    ]
-                },
-                {
-                    "id": 9,
-                    "text": "Litt stresset over alt jeg må gjøre",
-                    "rewarded_companies": [
-                        10,
-                        12,
-                        14,
                         16
                     ]
                 },
                 {
-                    "id": 10,
-                    "text": "Gleder meg til alt det spennende som skal skje",
+                    "id": 8,
+                    "text": "Har et fast grupperom jeg pleier å sitte i",
                     "rewarded_companies": [
-                        17,
-                        18,
-                        19,
-                        20
+                        17
                     ]
                 }
             ]
         },
         {
             "id": 3,
-            "question": "Hva liker du best å spise til frokost?",
+            "question": "Hvordan ser en typisk lunsjpause ut for deg?",
             "answers": [
                 {
-                    "id": 11,
-                    "text": "Havregrøt eller smoothie for en sunn start",
+                    "id": 9,
+                    "text": "Helst bløtkake og kaffe",
                     "rewarded_companies": [
-                        1,
-                        5,
-                        9,
-                        13
+                        19,
+                        1
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Caffe latté og en rask snack",
+                    "rewarded_companies": [
+                        2
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Henter meg en kaffe på stripa og spiser nisten på turen",
+                    "rewarded_companies": [
+                        8
                     ]
                 },
                 {
                     "id": 12,
-                    "text": "Brødskiver eller knekkebrød med pålegg",
+                    "text": "Ikke så nøye på det",
                     "rewarded_companies": [
-                        2,
-                        6,
-                        10,
-                        14
-                    ]
-                },
-                {
-                    "id": 13,
-                    "text": "Egg og bacon for en solid frokost",
-                    "rewarded_companies": [
-                        3,
-                        7,
-                        11,
-                        15
-                    ]
-                },
-                {
-                    "id": 14,
-                    "text": "Bare en kopp kaffe eller te, frokost er ikke min greie",
-                    "rewarded_companies": [
-                        4,
-                        8,
-                        12,
-                        16
-                    ]
-                },
-                {
-                    "id": 15,
-                    "text": "Yoghurt med müsli eller frukt",
-                    "rewarded_companies": [
-                        17,
-                        18,
-                        19,
-                        20
+                        11
                     ]
                 }
             ]
         },
         {
             "id": 4,
-            "question": "Hva gjør du helst en fredag kveld?",
+            "question": "Hvilken kopp har du på skolen?",
             "answers": [
                 {
-                    "id": 16,
-                    "text": "Ser en film eller serie hjemme",
+                    "id": 13,
+                    "text": "Har ikke, finner alltid en pappkopp",
                     "rewarded_companies": [
-                        1,
-                        6,
-                        11,
-                        16
+                        10
                     ]
                 },
                 {
-                    "id": 17,
-                    "text": "Går ut og spiser middag med venner",
+                    "id": 14,
+                    "text": "Hybridakoppen",
                     "rewarded_companies": [
-                        2,
-                        7,
-                        12,
-                        17
+                        4
                     ]
                 },
                 {
-                    "id": 18,
-                    "text": "Trener eller driver med en hobby",
+                    "id": 15,
+                    "text": "Høyteknologisk, selvvarmende kopp",
                     "rewarded_companies": [
-                        3,
-                        8,
-                        13,
                         18
                     ]
                 },
                 {
-                    "id": 19,
-                    "text": "Tar en rolig kveld med familie eller kjæreste",
+                    "id": 16,
+                    "text": "Termokopp",
                     "rewarded_companies": [
-                        4,
-                        9,
-                        14,
-                        19
+                        7
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Hvor vil du bosette deg?",
+            "answers": [
+                {
+                    "id": 17,
+                    "text": "Ved havet",
+                    "rewarded_companies": [
+                        0
+                    ]
+                },
+                {
+                    "id": 18,
+                    "text": "Trondheim",
+                    "rewarded_companies": [
+                        13
+                    ]
+                },
+                {
+                    "id": 19,
+                    "text": "Utenlands",
+                    "rewarded_companies": [
+                        3
                     ]
                 },
                 {
                     "id": 20,
-                    "text": "Drar ut på byen og har det gøy",
+                    "text": "På landet",
                     "rewarded_companies": [
-                        5,
-                        10,
-                        15,
+                        5
+                    ]
+                }
+
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Hvilket transportmiddel foretrekker du?",
+            "answers": [
+                {
+                    "id": 21,
+                    "text": "Bil",
+                    "rewarded_companies": [
+                        8
+                    ]
+                },
+                {
+                    "id": 22,
+                    "text": "Sykkel",
+                    "rewarded_companies": [
+                        16
+                    ]
+                },
+                {
+                    "id": 23,
+                    "text": "Offentlig transport",
+                    "rewarded_companies": [
                         20
+                    ]
+                },
+                {
+                    "id": 24,
+                    "text": "Til fots",
+                    "rewarded_companies": [
+                        19
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Hva slags musikk liker du best?",
+            "answers": [
+                {
+                    "id": 25,
+                    "text": "Rock",
+                    "rewarded_companies": [
+                        11
+                    ]
+                },
+                {
+                    "id": 26,
+                    "text": "Pop",
+                    "rewarded_companies": [
+                        6
+                    ]
+                },
+                {
+                    "id": 27,
+                    "text": "Jazz",
+                    "rewarded_companies": [
+                        9
+                    ]
+                },
+                {
+                    "id": 28,
+                    "text": "Klassisk",
+                    "rewarded_companies": [
+                        4
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Hvordan ser du for deg å tilbringe helgen?",
+            "answers": [
+                {
+                    "id": 29,
+                    "text": "Lese en bok",
+                    "rewarded_companies": [
+                        1
+                    ]
+                },
+                {
+                    "id": 30,
+                    "text": "Gå på kafé",
+                    "rewarded_companies": [
+                        3
+                    ]
+                },
+                {
+                    "id": 31,
+                    "text": "Møte bekjente",
+                    "rewarded_companies": [
+                        17
+                    ]
+                },
+                {
+                    "id": 32,
+                    "text": "Se film",
+                    "rewarded_companies": [
+                        18
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Hvilken fritidsaktivitet foretrekker du?",
+            "answers": [
+                {
+                    "id": 33,
+                    "text": "Tegne og male",
+                    "rewarded_companies": [
+                        12
+                    ]
+                },
+                {
+                    "id": 34,
+                    "text": "Vandre i fjellet",
+                    "rewarded_companies": [
+                        5
+                    ]
+                },
+                {
+                    "id": 35,
+                    "text": "Spille videospill",
+                    "rewarded_companies": [
+                        7
+                    ]
+                },
+                {
+                    "id": 36,
+                    "text": "Skole er min fritidsaktivitet",
+                    "rewarded_companies": [
+                        14,
+                        15
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Hva slags film foretrekker du?",
+            "answers": [
+                {
+                    "id": 37,
+                    "text": "Action",
+                    "rewarded_companies": [
+                        2
+                    ]
+                },
+                {
+                    "id": 38,
+                    "text": "Komedie",
+                    "rewarded_companies": [
+                        0
+                    ]
+                },
+                {
+                    "id": 39,
+                    "text": "Drama",
+                    "rewarded_companies": [
+                        13
+                    ]
+                },
+                {
+                    "id": 40,
+                    "text": "Skrekk",
+                    "rewarded_companies": [
+                        10
                     ]
                 }
             ]

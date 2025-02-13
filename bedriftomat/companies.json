@@ -1,107 +1,107 @@
 {
     "companies": [
         {
-            "id": 1,
+            "id": 0,
             "name": "bredvid",
             "logo": "/src/assets/images/bredvid.png"
         },
         {
-            "id": 2,
+            "id": 1,
             "name": "Statens Vegvesen",
             "logo": "/src/assets/images/Statens_vegvesen.webp"
         },
         {
-            "id": 3,
+            "id": 2,
             "name": "Kahoot!",
             "logo": "/src/assets/images/Kahoot!.png"
         },
         {
-            "id": 4,
+            "id": 3,
             "name": "Trimble",
             "logo": "/src/assets/images/Trimble.jpg"
         },
         {
-            "id": 5,
+            "id": 4,
             "name": "Storebrand",
             "logo": "/src/assets/images/Storebrand.png"
         },
         {
-            "id": 6,
+            "id": 5,
             "name": "Storvik",
             "logo": "/src/assets/images/Storvik.png"
         },
         {
-            "id": 7,
+            "id": 6,
             "name": "PwC",
             "logo": "/src/assets/images/PwC.png"
         },
         {
-            "id": 8,
+            "id": 7,
             "name": "Elkem",
             "logo": "/src/assets/images/Elkem.png"
         },
         {
-            "id": 9,
+            "id": 8,
             "name": "Posten og Bring",
             "logo": "/src/assets/images/Posten_Bring.png"
         },
         {
-            "id": 10,
+            "id": 9,
             "name": "Geomatikk",
             "logo": "/src/assets/images/Geomatikk.png"
         },
         {
-            "id": 11,
+            "id": 10,
             "name": "Skatteetaten",
             "logo": "/src/assets/images/Skatteetaten.png"
         },
         {
-            "id": 12,
+            "id": 11,
             "name": "Forsvarsbygg",
             "logo": "/src/assets/images/Forsvarsbygg.png"
         },
         {
-            "id": 13,
+            "id": 12,
             "name": "bouvet",
             "logo": "/src/assets/images/bouvet.png"
         },
         {
-            "id": 14,
+            "id": 13,
             "name": "Geodata",
             "logo": "/src/assets/images/Geodata.png"
         },
         {
-            "id": 15,
+            "id": 14,
             "name": "Tata Consultancy Services",
             "logo": "/src/assets/images/Tata_Consulting_Services.png"
         },
         {
-            "id": 16,
+            "id": 15,
             "name": "Sopra Steria",
             "logo": "/src/assets/images/Sopra_Steria.png"
         },
         {
-            "id": 17,
+            "id": 16,
             "name": "Innowin",
             "logo": "/src/assets/images/Innowin.png"
         },
         {
-            "id": 18,
+            "id": 17,
             "name": "Norconsult Digital",
             "logo": "/src/assets/images/Norconsult_Digital.png"
         },
         {
-            "id": 19,
+            "id": 18,
             "name": "Kartverket",
             "logo": "/src/assets/images/Kartverket.png"
         },
         {
-            "id": 20,
+            "id": 19,
             "name": "NBIM",
             "logo": "/src/assets/images/NBIM.png"
         },
         {
-            "id": 21,
+            "id": 20,
             "name": "Widerøe",
             "logo": "/src/assets/images/Wideroe.png"
         }

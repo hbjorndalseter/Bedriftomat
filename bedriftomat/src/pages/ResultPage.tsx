@@ -68,7 +68,7 @@ export default function ResultPage() {
                 <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg" >
                     <Link to="/">Prøv igjen</Link>
                 </button>
-                <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg">
+                <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg hover:bg-amber-600">
                     <Link to="https://www.ivdagene.no/standkart">Se standkart</Link>
                 </button>
             </div>
