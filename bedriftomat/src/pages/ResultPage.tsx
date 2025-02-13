@@ -29,40 +29,43 @@ export default function ResultPage() {
     return (
         <div className="flex flex-col items-center w-[85%] h-[80%] text-white justify-around">
             {/* Økt mellomrom her */}
-            <h2 className="text-2xl font-bold text-center ">Gratulerer! Du matcher med følgende bedrifter:</h2>
-            
-            <div className="flex items-end justify-center gap-x-8">
+            <h2 className="text-2xl text-center">Gratulerer! Du matcher med følgende bedrifter:</h2>
+
+            <div className="flex flex-col md:flex-row items-center md:items-end justify-around h-2/3 md:h-auto md:w-[500px]">
                 {resultingCompanies.length >= 3 && (
                     <>
-                        {/* 2. plass */}
-                        <div className="flex flex-col items-center">
-                            <div className="bg-white text-black text-center p-2 rounded-lg w-24 h-32 flex items-center justify-center shadow-lg">
-                                <img src={resultingCompanies[1].logo} alt={resultingCompanies[1].name} className="h-16 object-contain max-w-90/100" />
-                            </div>
-                            <p className="mt-2 font-bold text-lg">2</p>
+                        {/* 1. plass */}
+                        <div className="flex flex-col items-center md:order-2">
+                            <Link to={resultingCompanies[0].url} target="_blank" rel="noopener noreferrer">
+                                <div className="bg-white text-black text-center p-2 rounded-lg w-40 h-30 flex items-center justify-center shadow-xl">
+                                    <img src={resultingCompanies[0].logo} alt={resultingCompanies[0].name} className="h-1/1 object-contain max-w-90/100" />
+                                </div>
+                            </Link>
                         </div>
 
-                        {/* 1. plass */}
-                        <div className="flex flex-col items-center">
-                            <div className="bg-white text-black text-center p-2 rounded-lg w-28 h-40 flex items-center justify-center shadow-xl">
-                                <img src={resultingCompanies[0].logo} alt={resultingCompanies[0].name} className="h-20 object-contain max-w-90/100" />
-                            </div>
-                            <p className="mt-2 font-bold text-lg">1</p>
+                        {/* 2. plass */}
+                        <div className="flex flex-col items-center md:order-1">
+                            <Link to={resultingCompanies[1].url} target="_blank" rel="noopener noreferrer">
+                                <div className="bg-white text-black text-center p-2 rounded-lg w-32 h-24 flex items-center justify-center shadow-lg">
+                                    <img src={resultingCompanies[1].logo} alt={resultingCompanies[1].name} className="h-1/1 object-contain max-w-90/100" />
+                                </div>
+                            </Link>
                         </div>
 
                         {/* 3. plass */}
-                        <div className="flex flex-col items-center">
-                            <div className="bg-white text-black text-center p-2 rounded-lg w-24 h-28 flex items-center justify-center shadow-lg">
-                                <img src={resultingCompanies[2].logo} alt={resultingCompanies[2].name} className="h-14 object-contain max-w-90/100" />
-                            </div>
-                            <p className="mt-2 font-bold text-lg">3</p>
+                        <div className="flex flex-col items-center md:order-3">
+                            <Link to={resultingCompanies[2].url} target="_blank" rel="noopener noreferrer">
+                                <div className="bg-white text-black text-center p-2 rounded-lg md:w-32 md:h-24 w-28 h-22 flex items-center justify-center shadow-lg">
+                                    <img src={resultingCompanies[2].logo} alt={resultingCompanies[2].name} className="h-1/1 object-contain max-w-90/100" />
+                                </div>
+                            </Link>
                         </div>
                     </>
                 )}
             </div>
 
-            <p className="text-sm text-center mb-[100%]">
-                Sjekk standkartet for hvor du finner bedriftene og si *kodeord* for *premie*.
+            <p className="text-2x1 text-center mb-[100%]">
+                Sjekk standkartet vårt for å finne bedriftene i U1.
             </p>
             <div className="flex justify-between gap-x-[5%]">
                 <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg" >

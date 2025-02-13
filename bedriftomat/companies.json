@@ -3,107 +3,128 @@
         {
             "id": 0,
             "name": "bredvid",
-            "logo": "/src/assets/images/bredvid.png"
+            "logo": "/src/assets/images/bredvid.png",
+            "url": "https://www.bredvid.no"
         },
         {
             "id": 1,
             "name": "Statens Vegvesen",
-            "logo": "/src/assets/images/Statens_vegvesen.webp"
+            "logo": "/src/assets/images/Statens_vegvesen.webp",
+            "url": "https://www.vegvesen.no"
         },
         {
             "id": 2,
             "name": "Kahoot!",
-            "logo": "/src/assets/images/Kahoot!.png"
+            "logo": "/src/assets/images/Kahoot!.png",
+            "url": "https://www.kahoot.com"
         },
         {
             "id": 3,
             "name": "Trimble",
-            "logo": "/src/assets/images/Trimble.jpg"
+            "logo": "/src/assets/images/Trimble.jpg",
+            "url": "https://www.trimble.com"
         },
         {
             "id": 4,
             "name": "Storebrand",
-            "logo": "/src/assets/images/Storebrand.png"
+            "logo": "/src/assets/images/Storebrand.png",
+            "url": "https://www.storebrand.no"
         },
         {
             "id": 5,
             "name": "Storvik",
-            "logo": "/src/assets/images/Storvik.png"
+            "logo": "/src/assets/images/Storvik.png",
+            "url": "https://www.storvik.no"
         },
         {
             "id": 6,
             "name": "PwC",
-            "logo": "/src/assets/images/PwC.png"
+            "logo": "/src/assets/images/PwC.png",
+            "url": "https://www.pwc.com"
         },
         {
             "id": 7,
             "name": "Elkem",
-            "logo": "/src/assets/images/Elkem.png"
+            "logo": "/src/assets/images/Elkem.png",
+            "url": "https://www.elkem.com"
         },
         {
             "id": 8,
             "name": "Posten og Bring",
-            "logo": "/src/assets/images/Posten_Bring.png"
+            "logo": "/src/assets/images/Posten_Bring.png",
+            "url": "https://www.posten.no"
         },
         {
             "id": 9,
             "name": "Geomatikk",
-            "logo": "/src/assets/images/Geomatikk.png"
+            "logo": "/src/assets/images/Geomatikk.png",
+            "url": "https://www.geomatikk.no"
         },
         {
             "id": 10,
             "name": "Skatteetaten",
-            "logo": "/src/assets/images/Skatteetaten.png"
+            "logo": "/src/assets/images/Skatteetaten.png",
+            "url": "https://www.skatteetaten.no"
         },
         {
             "id": 11,
             "name": "Forsvarsbygg",
-            "logo": "/src/assets/images/Forsvarsbygg.png"
+            "logo": "/src/assets/images/Forsvarsbygg.png",
+            "url": "https://www.forsvarsbygg.no"
         },
         {
             "id": 12,
             "name": "bouvet",
-            "logo": "/src/assets/images/bouvet.png"
+            "logo": "/src/assets/images/bouvet.png",
+            "url": "https://www.bouvet.no"
         },
         {
             "id": 13,
             "name": "Geodata",
-            "logo": "/src/assets/images/Geodata.png"
+            "logo": "/src/assets/images/Geodata.png",
+            "url": "https://www.geodata.no"
         },
         {
             "id": 14,
             "name": "Tata Consultancy Services",
-            "logo": "/src/assets/images/Tata_Consulting_Services.png"
+            "logo": "/src/assets/images/Tata_Consulting_Services.png",
+            "url": "https://www.tcs.com"
         },
         {
             "id": 15,
             "name": "Sopra Steria",
-            "logo": "/src/assets/images/Sopra_Steria.png"
+            "logo": "/src/assets/images/Sopra_Steria.png",
+            "url": "https://www.soprasteria.no"
         },
         {
             "id": 16,
             "name": "Innowin",
-            "logo": "/src/assets/images/Innowin.png"
+            "logo": "/src/assets/images/Innowin.png",
+            "url": "https://www.innowin.no"
         },
         {
             "id": 17,
             "name": "Norconsult Digital",
-            "logo": "/src/assets/images/Norconsult_Digital.png"
+            "logo": "/src/assets/images/Norconsult_Digital.png",
+            "url": "https://www.norconsult.no"
         },
         {
             "id": 18,
             "name": "Kartverket",
-            "logo": "/src/assets/images/Kartverket.png"
+            "logo": "/src/assets/images/Kartverket.png",
+            "url": "https://www.kartverket.no"
         },
         {
             "id": 19,
             "name": "NBIM",
-            "logo": "/src/assets/images/NBIM.png"
+            "logo": "/src/assets/images/NBIM.png",
+            "url": "https://www.nbim.no"
         },
         {
             "id": 20,
             "name": "Widerøe",
-            "logo": "/src/assets/images/Wideroe.png"
+            "logo": "/src/assets/images/Wideroe.png",
+            "url": "https://www.wideroe.no"
         }
     ]
 }
