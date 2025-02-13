@@ -30,7 +30,7 @@ app.get("/randomQuestions", (req: Request, res: Response) => {
     try {
         const data = JSON.parse(fs.readFileSync("questions.json", "utf-8"));
         const questions : Question[] = data.questions;
-        const randomQuestions = questions.sort(() => Math.random() - 0.5).slice(0, 5);
+        const randomQuestions = questions.sort(() => Math.random() - 0.5).slice(0, 6);
         res.json({ questions: randomQuestions });
     }
     catch (error) {
