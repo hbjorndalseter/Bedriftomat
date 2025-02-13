@@ -26,6 +26,25 @@ export default function ResultPage() {
         fetchMatchingCompanies();
     }, [scores]);
 
+    async function checkLink(url: string) {
+        const response = await fetch(url, { method: "HEAD" });
+        if (!response.ok) {
+            throw new Error("Siden er ikke tilgjengelig");
+        }
+    }
+
+    function handleLinkClick(e: React.MouseEvent<HTMLAnchorElement>, url : string) {
+        e.preventDefault();
+        checkLink(url)
+            .then(() => {
+                window.location.href = url;
+        })
+        .catch((error) => {
+            console.error(error);
+            alert("Beklager, siden er ikke tilgjengelig for øyeblikket.");
+        })
+    }
+
     return (
         <div className="flex flex-col items-center w-[85%] h-[80%] text-white justify-around">
             {/* Økt mellomrom her */}
@@ -71,8 +90,14 @@ export default function ResultPage() {
                 <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg" >
                     <Link to="/">Prøv igjen</Link>
                 </button>
-                <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg hover:bg-amber-600">
-                    <Link to="https://www.ivdagene.no/standkart">Se standkart</Link>
+                <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg">
+                    <a
+                        href="https://www.ivdagene.no/standkart"
+                        onClick={(e) => handleLinkClick(e, "https://www.ivdagene.no/standkart")}
+                        className="no-underline"
+                    >
+                    Se standkart
+                    </a>
                 </button>
             </div>
         </div>

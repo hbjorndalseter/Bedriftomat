@@ -36,11 +36,11 @@
         },
         {
             "id": 2,
-            "question": "Hvilket arbeidsmiljø trives du best i?",
+            "question": "Hvor jobber du best?",
             "answers": [
                 {
                     "id": 5,
-                    "text": "Sal",
+                    "text": "På sal",
                     "rewarded_companies": [
                         9
                     ]
