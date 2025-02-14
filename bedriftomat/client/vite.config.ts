@@ -7,5 +7,8 @@ export default defineConfig({
     proxy: {
       "/api": "http://localhost:3000" // This makes API calls work in local development
     }
+  },
+  build: {
+    outDir: "dist" // Ensures Vercel knows where to find the frontend build
   }
 });
