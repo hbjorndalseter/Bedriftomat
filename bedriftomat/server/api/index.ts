@@ -1,67 +1,52 @@
-import express, { Request, Response } from 'express';
-import fs from "fs";
-import cors from 'cors';
-import { Company, Question} from "../types";
+import express, { Request, Response } from "express";
+import companiesData from "../data/companies.json";
+import questionsData from "../data/questions.json";
+import cors from "cors";
+import serverless from "serverless-http"; // Import for Vercel
+
 const app = express();
+app.use(cors());
+app.use(express.json());
 
-// Middleware
-app.use(cors()); // Allow cross-origin requests
-app.use(express.json())
-
-// Hent antall bedrifter fra companies.json
+// Route: Fetch companies
 app.get("/api/numCompanies", (req: Request, res: Response) => {
-    try {
-        const rawData = fs.readFileSync("companies.json", "utf-8");
-        const jsonData = JSON.parse(rawData)
-        const companies: Company[] = jsonData.companies;
-        res.json({ count: companies.length }) // Send antall bedrifter til klienten
-    } catch (error) {
-        res.status(500).json({ error: "Failed to load companies data."})
-    }
-})
+  try {
+    res.json({ count: companiesData.companies.length });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to load companies data." });
+  }
+});
 
-// Hent spørsmål fra questions.json
-app.get("/randomQuestions", (req: Request, res: Response) => {
-    try {
-        const data = JSON.parse(fs.readFileSync("questions.json", "utf-8"));
-        const questions : Question[] = data.questions;
-        const randomQuestions = questions.sort(() => Math.random() - 0.5).slice(0, 6);
-        res.json({ questions: randomQuestions });
-    }
-    catch (error) {
-        res.status(500).json({ error: "Failed to load questions data."})
-    }
- })
+// Route: Fetch random questions
+app.get("/api/randomQuestions", (req: Request, res: Response) => {
+  try {
+    const questions = questionsData.questions.sort(() => Math.random() - 0.5).slice(0, 6);
+    res.json({ questions });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to load questions data." });
+  }
+});
 
-// Hent bedrifter som matcher brukerens svar
-app.post("/matchingBusinesses", (req: Request, res: Response) => {
-    const scores = req.body;
-    try {
-        const rawData = fs.readFileSync("companies.json", "utf-8");
-        const jsonData = JSON.parse(rawData);
-        const companies: Company[] = jsonData.companies;
-        
-        // Combine companies with their scores
-        const companiesWithScores = companies.map((company, index) => ({
-            company,
-            score: scores[index] || 0
-        }));
-        
-        // Sort companies by score in descending order and get the top 3
-        const topCompanies = companiesWithScores
-            .sort((a, b) => b.score - a.score)
-            .slice(0, 3)
-            .map(item => item.company);
-        
-        res.json({topCompanies: topCompanies});
-    } catch (error) {
-        res.status(500).json({ error: "Failed to load companies data." });
-    }
- })
+// Route: Match businesses
+app.post("/api/matchingBusinesses", (req: Request, res: Response) => {
+  const scores = req.body;
+  try {
+    const companies = companiesData.companies;
+    const companiesWithScores = companies.map((company: any, index: number) => ({
+      company,
+      score: scores[index] || 0
+    }));
 
-// Serveren er på port 3000 (klienten er på port 5173)
-app.listen(3000, () => {
-    console.log("Lytter til en port.")
-})
+    const topCompanies = companiesWithScores
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map(item => item.company);
 
-module.exports = app
+    res.json({ topCompanies });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to load companies data." });
+  }
+});
+
+// Vercel serverless export
+export const handler = serverless(app);

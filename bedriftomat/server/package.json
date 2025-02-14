@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "scripts": {
-        "start": "tsx api/index.ts"
+        "start": "node api/index.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
