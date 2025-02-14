@@ -15,6 +15,10 @@
     {
       "source": "/api/(.*)",
       "destination": "/server/api/index.ts"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "client/dist/index.html"
     }
   ]
 }
