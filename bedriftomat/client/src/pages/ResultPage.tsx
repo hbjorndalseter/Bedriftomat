@@ -10,7 +10,7 @@ export default function ResultPage() {
 
     const fetchMatchingCompanies = async () => {
         try {
-            const response = await fetch("http://localhost:3000/matchingBusinesses", {
+            const response = await fetch("/api/matchingBusinesses", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(scores),
