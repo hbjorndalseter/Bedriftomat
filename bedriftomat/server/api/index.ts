@@ -5,16 +5,11 @@ import { Company, Question} from "../types";
 const app = express();
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173' })); // Allow cross-origin requests
+app.use(cors()); // Allow cross-origin requests
 app.use(express.json())
 
-// Test endepunkt
-// app.get("/test", (req: Request, res: Response) => {
-//     res.json({ text: "You clicked a button." });
-// })
-
 // Hent antall bedrifter fra companies.json
-app.get("/numCompanies", (req: Request, res: Response) => {
+app.get("/api/numCompanies", (req: Request, res: Response) => {
     try {
         const rawData = fs.readFileSync("companies.json", "utf-8");
         const jsonData = JSON.parse(rawData)
