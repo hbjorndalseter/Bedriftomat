@@ -2,7 +2,6 @@ import express, { Request, Response } from "express";
 import companiesData from "../data/companies.json";
 import questionsData from "../data/questions.json";
 import cors from "cors";
-import serverless from "serverless-http"; // Import for Vercel
 
 const app = express();
 app.use(cors());
@@ -55,5 +54,4 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
-// Vercel serverless export
-export const handler = serverless(app);
+export default app;
