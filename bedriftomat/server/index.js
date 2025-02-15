@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // Route: Fetch companies
-app.get("/api/numCompanies", (req: Request, res: Response) => {
+app.get("/api/numCompanies", (req, res) => {
   try {
     res.json({ count: companiesData.companies.length });
   } catch (error) {
@@ -17,7 +17,7 @@ app.get("/api/numCompanies", (req: Request, res: Response) => {
 });
 
 // Route: Fetch random questions
-app.get("/api/randomQuestions", (req: Request, res: Response) => {
+app.get("/api/randomQuestions", (req, res) => {
   try {
     const questions = questionsData.questions.sort(() => Math.random() - 0.5).slice(0, 6);
     res.json({ questions });
@@ -27,11 +27,11 @@ app.get("/api/randomQuestions", (req: Request, res: Response) => {
 });
 
 // Route: Match businesses
-app.post("/api/matchingBusinesses", (req: Request, res: Response) => {
+app.post("/api/matchingBusinesses", (req, res) => {
   const scores = req.body;
   try {
     const companies = companiesData.companies;
-    const companiesWithScores = companies.map((company: any, index: number) => ({
+    const companiesWithScores = companies.map((company, index) => ({
       company,
       score: scores[index] || 0
     }));
