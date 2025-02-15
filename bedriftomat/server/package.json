@@ -4,8 +4,9 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "start": "tsx api/index.ts",
-        "vercel-build": "tsc"
+        "dev": "tsx api/index.ts",
+        "build": "tsc",
+        "start": "node dist/api/index.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
