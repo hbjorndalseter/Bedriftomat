@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
-import companiesData from "/data/companies.json";
-import questionsData from "/data/questions.json";
+import companiesData from "./data/companies.json";
+import questionsData from "./data/questions.json";
 import cors from "cors";
 
 const app = express();
