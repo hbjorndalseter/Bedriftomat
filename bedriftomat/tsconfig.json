@@ -10,9 +10,9 @@
       "forceConsistentCasingInFileNames": true,
       "isolatedModules": true,
       "moduleResolution": "node",
-      "outDir": "dist/server",
-      "allowImportingTsExtensions": true,
-      "noEmit": true,                           
+      "outDir": "./dist",
+      //"allowImportingTsExtensions": true,
+      //"noEmit": true,                           
     },
     "include": [
       "client/src",      // For your Vite front-end code (type-checking only)
