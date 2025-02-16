@@ -92,13 +92,7 @@ export default function ResultPage() {
                     <Link to="/">Prøv igjen</Link>
                 </button>
                 <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg">
-                    <a
-                        href="https://www.ivdagene.no/standmap"
-                        onClick={(e) => handleLinkClick(e, "https://www.ivdagene.no/standmap")}
-                        className="no-underline"
-                    >
-                    Se standkart
-                    </a>
+                    <a href="https://www.ivdagene.no/standmap">Se standkart</a>
                 </button>
             </div>
         </div>
