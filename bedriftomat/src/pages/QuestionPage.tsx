@@ -14,6 +14,7 @@ const QuestionPage: React.FC = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [scores, setScores] = useState<number[]>([]);
   const [selectedAnswer, setSelectedAnswer] = useState<SelectedAnswer | null>(null);
+  const [progressBarLength, setProgressBarLength] = useState<number>(0);
 
   useEffect(() => {
     initializeScores();
@@ -47,27 +48,32 @@ const QuestionPage: React.FC = () => {
   const handleNext = () => {
     if (!selectedAnswer) return; //Prevent skipping without answering
 
-    setScores((prevScores) => { //Denne funksjonen var chat bestemt på at skulle skje på denne måten for å unngå bugs.
+    setScores((prevScores) => {
       const updatedScores = [...prevScores];
-
       selectedAnswer.rewardedCompanies.forEach((companyId) => {
         updatedScores[companyId] += 1;
       });
-
       return updatedScores;
     });
 
     setSelectedAnswer(null);
 
     if (quizData && currentQuestionIndex < quizData.length - 1) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+      setCurrentQuestionIndex((prevIndex) => {
+        const newIndex = prevIndex + 1;
+        setProgressBarLength(newIndex / quizData.length);
+        return newIndex;
+      });
     } else {
+      setProgressBarLength(1);
       finishQuiz();
     }
   };
 
   const finishQuiz = () => {
-    navigate("/result", { state: { scores } });
+    setTimeout(() => {
+      navigate("/result", { state: { scores } });
+    }, 300); // 1 second delay before navigating to the result page
   };
 
   if (!quizData || quizData.length === 0) {
@@ -78,7 +84,7 @@ const QuestionPage: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center h-80/100 justify-around max-[375px]:">
-      <ProgressBar progress={(currentQuestionIndex/quizData.length)} />
+      <ProgressBar progress={progressBarLength} />
       <QuestionBox text={currentQuestion.question} />
       <div className="flex flex-col h-2/3 justify-between">
         {currentQuestion.answers.map((answer) => (
