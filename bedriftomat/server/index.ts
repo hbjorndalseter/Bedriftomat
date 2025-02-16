@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 import fs from "fs";
 import path from "path";
 import cors from 'cors';
-import { Company, Question} from "../client/src/types";
+import { Company, Question } from "../client/src/types";
 const app = express();
 import bodyParser from 'body-parser';
 
