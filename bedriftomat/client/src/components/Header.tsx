@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
     return (
-        <img src="/src/images/IVDagene.png" alt="IVDagene" className='h-16' />
+        <img src="/images/IVDagene.png" alt="IVDagene" className='h-16' />
     );
 };
 
