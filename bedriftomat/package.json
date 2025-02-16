@@ -12,7 +12,7 @@
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node dist/server/index.js"
+    "start": "node bedriftomat/dist/server/index.js"  
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
