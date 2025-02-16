@@ -9,10 +9,11 @@ const app = express();
 app.use(cors()); // Allow cross-origin requests
 app.use(express.json())
 
-// Test endepunkt
-// app.get("/test", (req: Request, res: Response) => {
-//     res.json({ text: "You clicked a button." });
-// })
+ //Test endepunkt
+ app.get("/test", (req: Request, res: Response) => {
+     res.json({ text: "You loaded the data." });
+     console.log("Data loaded");
+ })
 
 // Hent antall bedrifter fra companies.json
 app.get("/numCompanies", (_req: Request, res: Response) => {
