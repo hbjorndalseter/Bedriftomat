@@ -7,30 +7,22 @@
                 {
                     "id": 1,
                     "text": "Trene",
-                    "rewarded_companies": [
-                        15
-                    ]
+                    "rewarded_companies": [15, 6, 11, 7, 1]
                 },
                 {
                     "id": 2,
                     "text": "Reise",
-                    "rewarded_companies": [
-                        14
-                    ]
+                    "rewarded_companies": [14, 20, 18, 13, 8, 9]
                 },
                 {
                     "id": 3,
                     "text": "Rolig kveld med venner",
-                    "rewarded_companies": [
-                        20
-                    ]
+                    "rewarded_companies": [3, 4, 16, 17, 19]
                 },
                 {
                     "id": 4,
                     "text": "Være på festival",
-                    "rewarded_companies": [
-                        6
-                    ]
+                    "rewarded_companies": [0, 2, 5, 12, 10]
                 }
             ]
         },
@@ -41,30 +33,22 @@
                 {
                     "id": 5,
                     "text": "På sal",
-                    "rewarded_companies": [
-                        9
-                    ]
+                    "rewarded_companies": [6, 3, 5, 19, 17]
                 },
                 {
                     "id": 6,
                     "text": "Vrimleområdet",
-                    "rewarded_companies": [
-                        12
-                    ]
+                    "rewarded_companies": [12, 2, 18, 20, 10]
                 },
                 {
                     "id": 7,
                     "text": "Fornøyd så lenge det er et grupperom",
-                    "rewarded_companies": [
-                        16
-                    ]
+                    "rewarded_companies": [16, 1, 14, 9, 7]
                 },
                 {
                     "id": 8,
                     "text": "Har et fast grupperom jeg pleier å sitte i",
-                    "rewarded_companies": [
-                        17
-                    ]
+                    "rewarded_companies": [0, 15, 8, 11, 4, 13]
                 }
             ]
         },
@@ -75,31 +59,22 @@
                 {
                     "id": 9,
                     "text": "Helst bløtkake og kaffe",
-                    "rewarded_companies": [
-                        19,
-                        1
-                    ]
+                    "rewarded_companies": [13, 15, 10, 12, 20]
                 },
                 {
                     "id": 10,
                     "text": "Caffe latté og en rask snack",
-                    "rewarded_companies": [
-                        2
-                    ]
+                    "rewarded_companies": [7, 6, 2, 5, 8]
                 },
                 {
                     "id": 11,
                     "text": "Henter meg en kaffe på stripa og spiser nisten på turen",
-                    "rewarded_companies": [
-                        8
-                    ]
+                    "rewarded_companies": [9, 17, 14, 16, 4]
                 },
                 {
                     "id": 12,
                     "text": "Ikke så nøye på det",
-                    "rewarded_companies": [
-                        11
-                    ]
+                    "rewarded_companies": [1, 11, 18, 19, 0, 3]
                 }
             ]
         },
@@ -110,30 +85,22 @@
                 {
                     "id": 13,
                     "text": "Har ikke, finner alltid en pappkopp",
-                    "rewarded_companies": [
-                        10
-                    ]
+                    "rewarded_companies": [5, 11, 7, 8, 9]
                 },
                 {
                     "id": 14,
                     "text": "Hybridakoppen",
-                    "rewarded_companies": [
-                        4
-                    ]
+                    "rewarded_companies": [19, 2, 14, 3, 10]
                 },
                 {
                     "id": 15,
                     "text": "Høyteknologisk, selvvarmende kopp",
-                    "rewarded_companies": [
-                        18
-                    ]
+                    "rewarded_companies": [12, 1, 4, 17, 15]
                 },
                 {
                     "id": 16,
                     "text": "Termokopp",
-                    "rewarded_companies": [
-                        7
-                    ]
+                    "rewarded_companies": [0, 6, 18, 16, 13, 20]
                 }
             ]
         },
@@ -144,32 +111,23 @@
                 {
                     "id": 17,
                     "text": "Ved havet",
-                    "rewarded_companies": [
-                        0
-                    ]
+                    "rewarded_companies": [11, 14, 3, 0, 6]
                 },
                 {
                     "id": 18,
                     "text": "Trondheim",
-                    "rewarded_companies": [
-                        13
-                    ]
+                    "rewarded_companies": [19, 16, 10, 15, 8]
                 },
                 {
                     "id": 19,
                     "text": "Utenlands",
-                    "rewarded_companies": [
-                        3
-                    ]
+                    "rewarded_companies": [9, 7, 4, 18, 5]
                 },
                 {
                     "id": 20,
                     "text": "På landet",
-                    "rewarded_companies": [
-                        5
-                    ]
+                    "rewarded_companies": [1, 12, 2, 13, 17, 20]
                 }
-
             ]
         },
         {
@@ -179,30 +137,22 @@
                 {
                     "id": 21,
                     "text": "Bil",
-                    "rewarded_companies": [
-                        8
-                    ]
+                    "rewarded_companies": [0, 2, 5, 15, 19]
                 },
                 {
                     "id": 22,
                     "text": "Sykkel",
-                    "rewarded_companies": [
-                        16
-                    ]
+                    "rewarded_companies": [18, 12, 11, 3, 7]
                 },
                 {
                     "id": 23,
                     "text": "Offentlig transport",
-                    "rewarded_companies": [
-                        20
-                    ]
+                    "rewarded_companies": [10, 8, 4, 16, 6]
                 },
                 {
                     "id": 24,
                     "text": "Til fots",
-                    "rewarded_companies": [
-                        19
-                    ]
+                    "rewarded_companies": [1, 14, 17, 9, 20, 13]
                 }
             ]
         },
@@ -213,30 +163,22 @@
                 {
                     "id": 25,
                     "text": "Rock",
-                    "rewarded_companies": [
-                        11
-                    ]
+                    "rewarded_companies": [13, 1, 8, 18, 15]
                 },
                 {
                     "id": 26,
                     "text": "Pop",
-                    "rewarded_companies": [
-                        6
-                    ]
+                    "rewarded_companies": [3, 19, 10, 6, 2]
                 },
                 {
                     "id": 27,
                     "text": "Jazz",
-                    "rewarded_companies": [
-                        9
-                    ]
+                    "rewarded_companies": [7, 0, 14, 4, 9]
                 },
                 {
                     "id": 28,
                     "text": "Klassisk",
-                    "rewarded_companies": [
-                        4
-                    ]
+                    "rewarded_companies": [17, 5, 12, 11, 16, 20]
                 }
             ]
         },
@@ -247,30 +189,22 @@
                 {
                     "id": 29,
                     "text": "Lese en bok",
-                    "rewarded_companies": [
-                        1
-                    ]
+                    "rewarded_companies": [10, 4, 5, 17, 9]
                 },
                 {
                     "id": 30,
                     "text": "Gå på kafé",
-                    "rewarded_companies": [
-                        3
-                    ]
+                    "rewarded_companies": [6, 19, 0, 8, 2]
                 },
                 {
                     "id": 31,
                     "text": "Møte bekjente",
-                    "rewarded_companies": [
-                        17
-                    ]
+                    "rewarded_companies": [12, 14, 11, 3, 7]
                 },
                 {
                     "id": 32,
                     "text": "Se film",
-                    "rewarded_companies": [
-                        18
-                    ]
+                    "rewarded_companies": [16, 18, 1, 15, 20, 13]
                 }
             ]
         },
@@ -281,31 +215,22 @@
                 {
                     "id": 33,
                     "text": "Tegne og male",
-                    "rewarded_companies": [
-                        12
-                    ]
+                    "rewarded_companies": [3, 6, 19, 12, 15]
                 },
                 {
                     "id": 34,
                     "text": "Vandre i fjellet",
-                    "rewarded_companies": [
-                        5
-                    ]
+                    "rewarded_companies": [0, 9, 8, 17, 4]
                 },
                 {
                     "id": 35,
                     "text": "Spille videospill",
-                    "rewarded_companies": [
-                        7
-                    ]
+                    "rewarded_companies": [1, 10, 14, 2, 20]
                 },
                 {
                     "id": 36,
                     "text": "Skole er min fritidsaktivitet",
-                    "rewarded_companies": [
-                        14,
-                        15
-                    ]
+                    "rewarded_companies": [5, 16, 7, 11, 13, 18]
                 }
             ]
         },
@@ -316,30 +241,74 @@
                 {
                     "id": 37,
                     "text": "Action",
-                    "rewarded_companies": [
-                        2
-                    ]
+                    "rewarded_companies": [12, 18, 2, 15, 9]
                 },
                 {
                     "id": 38,
                     "text": "Komedie",
-                    "rewarded_companies": [
-                        0
-                    ]
+                    "rewarded_companies": [5, 10, 1, 14, 7]
                 },
                 {
                     "id": 39,
                     "text": "Drama",
-                    "rewarded_companies": [
-                        13
-                    ]
+                    "rewarded_companies": [19, 6, 4, 8, 3]
                 },
                 {
                     "id": 40,
                     "text": "Skrekk",
-                    "rewarded_companies": [
-                        10
-                    ]
+                    "rewarded_companies": [0, 11, 16, 17, 13, 20]
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "question": "Hvem er du i vennegjengen?",
+            "answers": [
+                {
+                    "id": 41,
+                    "text": "Jeg får alle med på spontane eventyr",
+                    "rewarded_companies": [7, 12, 16, 1, 9]
+                },
+                {
+                    "id": 42,
+                    "text": "Jeg er den som alltid har en PowerPoint klar",
+                    "rewarded_companies": [3, 5, 14, 10, 19]
+                },
+                {
+                    "id": 43,
+                    "text": "Jeg stiller alltid opp med gode råd",
+                    "rewarded_companies": [2, 8, 4, 13, 17]
+                },
+                {
+                    "id": 44,
+                    "text": "Jeg er sjåføren som alltid henter folk",
+                    "rewarded_companies": [0, 6, 11, 15, 18, 20]
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "question": "Hva er ditt forhold til deadlines?",
+            "answers": [
+                {
+                    "id": 45,
+                    "text": "Elsker dem! Full kontroll med milepæler og buffer",
+                    "rewarded_companies": [1, 9, 4, 11, 16]
+                },
+                {
+                    "id": 46,
+                    "text": "Trenger litt press, men leverer alltid i tide",
+                    "rewarded_companies": [3, 5, 7, 12, 18]
+                },
+                {
+                    "id": 47,
+                    "text": "Jobber best under ekstremt press rett før fristen",
+                    "rewarded_companies": [6, 10, 14, 2, 13]
+                },
+                {
+                    "id": 48,
+                    "text": "Hva er en deadline?",
+                    "rewarded_companies": [0, 8, 15, 17, 19, 20]
                 }
             ]
         }
