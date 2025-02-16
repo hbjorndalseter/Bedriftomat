@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Company } from "../types";
 import { Link } from "react-router-dom";
+import config from "../config";
 
 export default function ResultPage() {
     const location = useLocation();
@@ -10,7 +11,7 @@ export default function ResultPage() {
 
     const fetchMatchingCompanies = async () => {
         try {
-            const response = await fetch("http://localhost:3000/matchingBusinesses", {
+            const response = await fetch(`${config.baseUrl}/matchingBusinesses`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(scores),

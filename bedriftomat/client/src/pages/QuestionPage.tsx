@@ -5,7 +5,7 @@ import QuestionBox from "../components/QuestionBox";
 import AnswerButton from "../components/AnswerButton";
 import NextButton from "../components/NextButton";
 import ProgressBar from "../components/ProgressBar";
-
+import config from "../config";
 const QuestionPage: React.FC = () => {
 
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ const QuestionPage: React.FC = () => {
 
   const initializeScores = async () => {
     try {
-      const response = await fetch("http://localhost:3000/numCompanies");
+      const response = await fetch(`${config.baseUrl}/numCompanies`);
       const data = await response.json();
       setScores(new Array(data.count).fill(0));
     } catch (error) {
@@ -32,7 +32,7 @@ const QuestionPage: React.FC = () => {
 
   const initializeQuestions = async () => {
     try {
-      const response = await fetch("http://localhost:3000/randomQuestions");
+      const response = await fetch(`${config.baseUrl}/randomQuestions`);
       const data = await response.json();
       setQuizData(data.questions);
     } catch (error) {
