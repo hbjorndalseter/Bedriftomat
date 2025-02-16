@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000;
  })
 
 // Hent antall bedrifter fra companies.json
-app.get("/api/numCompanies", (_req: Request, res: Response) => {
+app.get("/numCompanies", (_req: Request, res: Response) => {
     try {
         const filePath = path.join(__dirname, 'data', 'companies.json');
         const rawData = fs.readFileSync(filePath, "utf-8");
@@ -34,7 +34,7 @@ app.get("/api/numCompanies", (_req: Request, res: Response) => {
 })
 
 // Hent spørsmål fra questions.json
-app.get("/api/randomQuestions", (_req: Request, res: Response) => {
+app.get("/randomQuestions", (_req: Request, res: Response) => {
     try {
         const filePath = path.join(__dirname, 'data', 'questions.json');
         const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
@@ -48,7 +48,7 @@ app.get("/api/randomQuestions", (_req: Request, res: Response) => {
  })
 
 // Hent bedrifter som matcher brukerens svar
-app.post("/api/matchingBusinesses", (req: Request, res: Response) => {
+app.post("/matchingBusinesses", (req: Request, res: Response) => {
     const scores = req.body;
     try {
         const filePath = path.join(__dirname, 'data', 'companies.json');
