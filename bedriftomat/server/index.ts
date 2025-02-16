@@ -68,9 +68,9 @@ app.post("/matchingBusinesses", (req: Request, res: Response) => {
     }
  })
 
-// Serveren er på port 3000 (klienten er på port 5173)
-app.listen(3000, () => {
-    console.log("Lytter til en port.")
-})
+ const PORT = process.env.PORT || 3000;
+ app.listen(PORT, () => {
+   console.log(`Server listening on port ${PORT}`);
+ });
 
 module.exports = app
