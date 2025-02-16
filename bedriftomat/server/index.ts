@@ -8,6 +8,14 @@ const app = express();
 // Middleware
 app.use(cors()); // Allow cross-origin requests
 app.use(express.json())
+app.use(express.static(path.join(__dirname, '../../client/dist')));
+
+const PORT = process.env.PORT || 3000;
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
+  });
+
 
  //Test endepunkt
  app.get("/test", (req: Request, res: Response) => {
@@ -69,7 +77,6 @@ app.post("/matchingBusinesses", (req: Request, res: Response) => {
     }
  })
 
- const PORT = process.env.PORT || 3000;
  app.listen(PORT, () => {
    console.log(`Server listening on port ${PORT}`);
  });
