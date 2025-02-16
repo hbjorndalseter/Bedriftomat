@@ -17,6 +17,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "bedriftomat": "file:",
+    "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "react": "^18.3.1",

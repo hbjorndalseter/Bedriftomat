@@ -4,11 +4,13 @@ import path from "path";
 import cors from 'cors';
 import { Company, Question} from "../client/src/types";
 const app = express();
+import bodyParser from 'body-parser';
 
 // Middleware
 app.use(cors()); // Allow cross-origin requests
 app.use(express.json())
 app.use(express.static(path.join(__dirname, '../../client/dist')));
+app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 3000;
 
