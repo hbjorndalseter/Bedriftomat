@@ -1,7 +1,8 @@
 import express, { Request, Response } from 'express';
 import fs from "fs";
+import path from "path";
 import cors from 'cors';
-import { Company, Question} from "../types";
+import { Company, Question} from "../client/src/types";
 const app = express();
 
 // Middleware
@@ -14,9 +15,10 @@ app.use(express.json())
 // })
 
 // Hent antall bedrifter fra companies.json
-app.get("/numCompanies", (req: Request, res: Response) => {
+app.get("/numCompanies", (_req: Request, res: Response) => {
     try {
-        const rawData = fs.readFileSync("companies.json", "utf-8");
+        const filePath = path.join(__dirname, 'data', 'companies.json');
+        const rawData = fs.readFileSync(filePath, "utf-8");
         const jsonData = JSON.parse(rawData)
         const companies: Company[] = jsonData.companies;
         res.json({ count: companies.length }) // Send antall bedrifter til klienten
@@ -26,9 +28,10 @@ app.get("/numCompanies", (req: Request, res: Response) => {
 })
 
 // Hent spørsmål fra questions.json
-app.get("/randomQuestions", (req: Request, res: Response) => {
+app.get("/randomQuestions", (_req: Request, res: Response) => {
     try {
-        const data = JSON.parse(fs.readFileSync("questions.json", "utf-8"));
+        const filePath = path.join(__dirname, 'data', 'questions.json');
+        const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
         const questions : Question[] = data.questions;
         const randomQuestions = questions.sort(() => Math.random() - 0.5).slice(0, 6);
         res.json({ questions: randomQuestions });
@@ -42,7 +45,8 @@ app.get("/randomQuestions", (req: Request, res: Response) => {
 app.post("/matchingBusinesses", (req: Request, res: Response) => {
     const scores = req.body;
     try {
-        const rawData = fs.readFileSync("companies.json", "utf-8");
+        const filePath = path.join(__dirname, 'data', 'companies.json');
+        const rawData = fs.readFileSync(filePath, "utf-8");
         const jsonData = JSON.parse(rawData);
         const companies: Company[] = jsonData.companies;
         
