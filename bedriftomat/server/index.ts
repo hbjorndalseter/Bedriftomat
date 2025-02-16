@@ -14,10 +14,6 @@ app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 3000;
 
-app.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
-  });
-
  //Test endepunkt
  app.get("/test", (req: Request, res: Response) => {
      res.json({ text: "You loaded the data." });
@@ -77,6 +73,10 @@ app.post("/matchingBusinesses", (req: Request, res: Response) => {
         res.status(500).json({ error: "Failed to load companies data." });
     }
  })
+
+ app.get('*', (_req, res) => {
+    res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
+  });
 
  app.listen(PORT, () => {
    console.log(`Server listening on port ${PORT}`);
