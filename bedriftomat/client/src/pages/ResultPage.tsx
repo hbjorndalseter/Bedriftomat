@@ -88,17 +88,17 @@ export default function ResultPage() {
                 Sjekk standkartet vårt for å finne bedriftene i U1.
             </p>
             <div className="flex justify-between gap-x-[5%]">
-                <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg" >
-                    <Link to="/">Prøv igjen</Link>
-                </button>
-                <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg">
-                    <a href="https://www.ivdagene.no/standmap"
+                    <Link to="/" className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg cursor-pointer" >
+                        Prøv igjen
+                    </Link>
+                    <a 
+                        className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg cursor-pointer"
+                        href="https://www.ivdagene.no/standmap"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         Se standkart
                     </a>
-                </button>
             </div>
         </div>
     );
