@@ -6,10 +6,8 @@ interface StartButtonProps {
 
 export default function StartButton({ title }: StartButtonProps) {
     return (
-        <button className="start-button">
-            <Link to="/question">
-                {title}
-            </Link>
-        </button>
+        <Link to="/question" className="start-button">
+            {title}
+        </Link>
     );
 }
