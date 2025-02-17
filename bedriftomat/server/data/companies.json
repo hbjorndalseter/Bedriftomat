@@ -125,6 +125,18 @@
             "name": "Widerøe",
             "logo": "images/Wideroe.png",
             "url": "https://www.wideroe.no"
+        },
+        {
+            "id": 21,
+            "name": "Forsvaret",
+            "logo": "images/Forsvaret.png",
+            "url": "https://www.forsvaret.no/"
+        },
+        {
+            "id": 22,
+            "name": "Forsvarsmateriell",
+            "logo": "images/forsvarsmateriell.png",
+            "url": "https://www.fma.no/"
         }
     ]
 }
