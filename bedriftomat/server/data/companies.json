@@ -52,7 +52,7 @@
             "id": 8,
             "name": "Posten og Bring",
             "logo": "images/Posten_Bring.png",
-            "url": "https://www.posten.no"
+            "url": "https://www.postenbring.no"
         },
         {
             "id": 9,
@@ -106,7 +106,7 @@
             "id": 17,
             "name": "Norconsult Digital",
             "logo": "images/Norconsult_Digital.png",
-            "url": "https://www.norconsult.no"
+            "url": "https://norconsultdigital.no/"
         },
         {
             "id": 18,
@@ -124,7 +124,7 @@
             "id": 20,
             "name": "Widerøe",
             "logo": "images/Wideroe.png",
-            "url": "https://www.wideroe.no"
+            "url": "https://www.jobbiwideroe.no/"
         },
         {
             "id": 21,
