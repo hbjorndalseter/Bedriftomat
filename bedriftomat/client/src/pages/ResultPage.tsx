@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Company } from "../types";
 import { Link } from "react-router-dom";
+import config from "../config";
 
 export default function ResultPage() {
     const location = useLocation();
@@ -10,7 +11,7 @@ export default function ResultPage() {
 
     const fetchMatchingCompanies = async () => {
         try {
-            const response = await fetch("http://localhost:3000/matchingBusinesses", {
+            const response = await fetch(`${config.baseUrl}/matchingBusinesses`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(scores),
@@ -91,12 +92,11 @@ export default function ResultPage() {
                     <Link to="/">Prøv igjen</Link>
                 </button>
                 <button className="bg-white text-black p-2 rounded-lg w-36 h-12 flex items-center justify-center shadow-lg">
-                    <a
-                        href="https://www.ivdagene.no/standkart"
-                        onClick={(e) => handleLinkClick(e, "https://www.ivdagene.no/standkart")}
-                        className="no-underline"
+                    <a href="https://www.ivdagene.no/standmap"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-                    Se standkart
+                        Se standkart
                     </a>
                 </button>
             </div>

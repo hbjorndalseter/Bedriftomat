@@ -1,22 +1,30 @@
 import express, { Request, Response } from 'express';
 import fs from "fs";
+import path from "path";
 import cors from 'cors';
-import { Company, Question} from "../types";
+import { Company, Question } from "../client/src/types";
 const app = express();
+import bodyParser from 'body-parser';
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173' })); // Allow cross-origin requests
+app.use(cors()); // Allow cross-origin requests
 app.use(express.json())
+app.use(express.static(path.join(__dirname, '../../client/dist')));
+app.use(bodyParser.json());
 
-// Test endepunkt
-// app.get("/test", (req: Request, res: Response) => {
-//     res.json({ text: "You clicked a button." });
-// })
+const PORT = process.env.PORT || 3000;
+
+ //Test endepunkt
+ app.get("/test", (req: Request, res: Response) => {
+     res.json({ text: "You loaded the data." });
+     console.log("Data loaded");
+ })
 
 // Hent antall bedrifter fra companies.json
-app.get("/numCompanies", (req: Request, res: Response) => {
+app.get("/numCompanies", (_req: Request, res: Response) => {
     try {
-        const rawData = fs.readFileSync("companies.json", "utf-8");
+        const filePath = path.join(__dirname, 'data', 'companies.json');
+        const rawData = fs.readFileSync(filePath, "utf-8");
         const jsonData = JSON.parse(rawData)
         const companies: Company[] = jsonData.companies;
         res.json({ count: companies.length }) // Send antall bedrifter til klienten
@@ -26,9 +34,10 @@ app.get("/numCompanies", (req: Request, res: Response) => {
 })
 
 // Hent spørsmål fra questions.json
-app.get("/randomQuestions", (req: Request, res: Response) => {
+app.get("/randomQuestions", (_req: Request, res: Response) => {
     try {
-        const data = JSON.parse(fs.readFileSync("questions.json", "utf-8"));
+        const filePath = path.join(__dirname, 'data', 'questions.json');
+        const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
         const questions : Question[] = data.questions;
         const randomQuestions = questions.sort(() => Math.random() - 0.5).slice(0, 6);
         res.json({ questions: randomQuestions });
@@ -42,7 +51,8 @@ app.get("/randomQuestions", (req: Request, res: Response) => {
 app.post("/matchingBusinesses", (req: Request, res: Response) => {
     const scores = req.body;
     try {
-        const rawData = fs.readFileSync("companies.json", "utf-8");
+        const filePath = path.join(__dirname, 'data', 'companies.json');
+        const rawData = fs.readFileSync(filePath, "utf-8");
         const jsonData = JSON.parse(rawData);
         const companies: Company[] = jsonData.companies;
         
@@ -64,9 +74,12 @@ app.post("/matchingBusinesses", (req: Request, res: Response) => {
     }
  })
 
-// Serveren er på port 3000 (klienten er på port 5173)
-app.listen(3000, () => {
-    console.log("Lytter til en port.")
-})
+ app.get('*', (_req, res) => {
+    res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
+  });
+
+ app.listen(PORT, () => {
+   console.log(`Server listening on port ${PORT}`);
+ });
 
 module.exports = app
