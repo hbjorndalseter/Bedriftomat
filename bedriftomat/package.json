@@ -7,7 +7,7 @@
     "build:server": "tsc",
     "build:client": "vite build --config client/vite.config.ts",
     "build": "npm run build:server && npm run build:client",
-    "dev:server": "nodemon --watch server --exec 'ts-node' server/index.ts",
+    "dev:server": "nodemon --watch server --exec ts-node server/index.ts",
     "dev:client": "vite --config client/vite.config.ts",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "lint": "eslint .",
